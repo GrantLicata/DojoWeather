@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="nav-bar">
+        <div id="nav-center-box">
+            <h1>DojoWeather</h1>
+            <ul id="location-list">
+                <li class="location" onclick="alert('Loading weather report...')">Burbank</li>
+                <li class="location" onclick="alert('Loading weather report...')">Chicago</li>
+                <li class="location" onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Location Bar -->
+    <div id="location-bar">
+        <div id="location-center-box">
+            <p id="selected-location">San Jose</p>
+            <div id="location-temp-head">
+                <label for="temp-selector">show temperature in </label>
+                <select name="temp-selector" id="temp-selector" onchange="tempConversion(this)">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Weather Cards -->
+    <div id="weather-container">
+        <div id="weather-center-box">
+            <!-- Today's Card -->
+                <div class="weather-card">
+                    <h2>Today</h2>
+                    <img src="./assets/some_rain.png" alt="weather image" class="weather-image">
+                    <p>some rain</p>
+                    <div class="temps">
+                        <div class="tWrapH">
+                            <p class="temp">24</p>
+                            <p>°</p>
+                        </div>
+                        <div class="tWrapL">
+                            <p class="temp">18</p>
+                            <p>°</p>
+                        </div>          
+                    </div>
+                </div>
+
+                <!-- Tomorrow's Card -->
+                <div class="weather-card">
+                    <h2>Today</h2>
+                    <img src="./assets/some_sun.png" alt="weather image" class="weather-image">
+                    <p>some sun</p>
+                    <div class="temps">
+                        <div class="tWrapH">
+                            <p class="temp">27</p>
+                            <p>°</p>
+                        </div>
+                        <div class="tWrapL">
+                            <p class="temp">19</p>
+                            <p>°</p>
+                        </div>                        
+                    </div>
+                </div>
+
+                <!-- Friday's Card -->
+                <div class="weather-card">
+                    <h2>Today</h2>
+                    <img src="./assets/some_clouds.png" alt="weather image" class="weather-image">
+                    <p>some clouds</p>
+                    <div class="temps">
+                        <div class="tWrapH">
+                            <p class="temp">21</p>
+                            <p>°</p>
+                        </div>
+                        <div class="tWrapL">
+                            <p class="temp">16</p>
+                            <p>°</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saturday's Card -->
+                <div class="weather-card">
+                    <h2>Today</h2>
+                    <img src="./assets/some_sun.png" alt="weather image" class="weather-image">
+                    <p>some sun</p>
+                    <div class="temps">
+                        <div class="tWrapH">
+                            <p class="temp">26</p>
+                            <p>°</p>
+                        </div>
+                        <div class="tWrapL">
+                            <p class="temp">21</p>
+                            <p>°</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!-- Cookie Pop-up -->
+    <div id="cookie-center-box">
+        <div id="cookie">
+            <img src="./assets/cookie.png" alt="cookie image">
+            <div id="cookie-description">
+                <p id="cookie-head"><strong>Stop! Cookie time</strong></p>
+                <p id="cookie-content">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="/">Read more...</a></p>
+            </div>
+            <button onclick="removeCookie()">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

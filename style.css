@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Navigation Bar --- */
+#nav-bar {
+    background-color: rgb(165, 196, 245);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#nav-center-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+}
+
+#location-list {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.location {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+/* --- Location Bar --- */
+#location-bar {
+    display: flex;
+    justify-content: center;
+}
+
+#location-center-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 700px;
+    border-bottom: 2px solid black;
+    padding: 10px 0px 10px 0px;
+}
+
+#selected-location {
+    font-size: 18pt;
+}
+
+#temp-selector {
+    margin-left: 5px;
+}
+
+/* --- Weather Cards --- */
+
+#weather-container {
+    display: flex;
+    justify-content: center;
+}
+
+#weather-center-box {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.weather-card {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 15px 0px 15px 0px;
+}
+
+.weather-image {
+    border: 0px solid;
+    border-radius: 50%;
+    margin: 10px;
+    height: 140px;
+}
+
+.tWrapH {
+    display: flex;
+    color: red;
+    font-weight: 600;
+}
+
+.tWrapL {
+    display: flex;
+    color: blue;
+    font-weight: 600;
+}
+
+/* --- Cookie --- */
+#cookie-center-box {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#cookie {
+    width: 700px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px black;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 5;
+}
+#cookie-head {
+    font-size: 14pt;
+    margin-top: 10px;
+}
+
+#cookie-content {
+    width: 450px;
+    margin: 0px 0px 10px 0px;
+}
+
+button {
+    background-color:  rgb(165, 196, 245);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px black;
+}
